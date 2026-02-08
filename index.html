@@ -12,6 +12,19 @@
     </head>
 
       <body>
+          <script>
+  const password = "bothwell1812dore";
+
+  if (localStorage.getItem("auth") !== "yes") {
+    const input = prompt("password:");
+    if (input === password) {
+      localStorage.setItem("auth", "yes");
+    } else {
+      document.body.innerHTML = "";
+      window.location.href = "https://google.com";
+    }
+  }
+</script>
          <div class="heading">
           <h1>bothwell stuff</h1>
          </div>
